@@ -138,7 +138,7 @@ GameObject:
   - component: {fileID: 125787348}
   m_Layer: 5
   m_Name: Cell7
-  m_TagString: Untagged
+  m_TagString: cell
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -174,8 +174,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bfbcd382b1ce7b846ae2da83a4cb04e8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  moves: 0
   cell: {fileID: 125787346}
-  winPoint: {fileID: 0}
+  isRight: 0
   clicksToWin: 0
 --- !u!114 &125787349
 MonoBehaviour:
@@ -286,7 +287,7 @@ GameObject:
   - component: {fileID: 185465975}
   m_Layer: 5
   m_Name: Cell5
-  m_TagString: Untagged
+  m_TagString: cell
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -322,8 +323,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bfbcd382b1ce7b846ae2da83a4cb04e8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  moves: 0
   cell: {fileID: 185465973}
-  winPoint: {fileID: 0}
+  isRight: 0
   clicksToWin: 0
 --- !u!114 &185465976
 MonoBehaviour:
@@ -434,7 +436,7 @@ GameObject:
   - component: {fileID: 240322648}
   m_Layer: 5
   m_Name: Cell4
-  m_TagString: Untagged
+  m_TagString: cell
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -470,8 +472,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bfbcd382b1ce7b846ae2da83a4cb04e8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  moves: 0
   cell: {fileID: 240322646}
-  winPoint: {fileID: 0}
+  isRight: 0
   clicksToWin: 2
 --- !u!114 &240322649
 MonoBehaviour:
@@ -758,7 +761,7 @@ GameObject:
   - component: {fileID: 465007364}
   m_Layer: 5
   m_Name: Cell9
-  m_TagString: Untagged
+  m_TagString: cell
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -794,8 +797,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bfbcd382b1ce7b846ae2da83a4cb04e8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  moves: 0
   cell: {fileID: 465007362}
-  winPoint: {fileID: 0}
+  isRight: 0
   clicksToWin: 1
 --- !u!114 &465007365
 MonoBehaviour:
@@ -1374,6 +1378,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 964077525}
+  - component: {fileID: 964077526}
   m_Layer: 5
   m_Name: Cells
   m_TagString: Untagged
@@ -1409,6 +1414,19 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &964077526
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 964077524}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c39b3b98e8912c34a9642d4f8e62635f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  moves: 16
 --- !u!1 &968137194
 GameObject:
   m_ObjectHideFlags: 0
@@ -1930,6 +1948,7 @@ GameObject:
   - component: {fileID: 1167958257}
   - component: {fileID: 1167958256}
   - component: {fileID: 1167958255}
+  - component: {fileID: 1167958254}
   m_Layer: 5
   m_Name: Cell2
   m_TagString: Untagged
@@ -1956,6 +1975,22 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 145.5}
   m_SizeDelta: {x: 0, y: 11}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1167958254
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1167958252}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bfbcd382b1ce7b846ae2da83a4cb04e8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  moves: 0
+  cell: {fileID: 1167958252}
+  isRight: 1
+  clicksToWin: 0
 --- !u!114 &1167958255
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2403,7 +2438,7 @@ GameObject:
   - component: {fileID: 1362523821}
   m_Layer: 5
   m_Name: Cell3
-  m_TagString: Untagged
+  m_TagString: cell
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2439,8 +2474,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bfbcd382b1ce7b846ae2da83a4cb04e8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  moves: 0
   cell: {fileID: 1362523819}
-  winPoint: {fileID: 0}
+  isRight: 0
   clicksToWin: 2
 --- !u!114 &1362523822
 MonoBehaviour:
@@ -2551,7 +2587,7 @@ GameObject:
   - component: {fileID: 1369183030}
   m_Layer: 5
   m_Name: Cell6
-  m_TagString: Untagged
+  m_TagString: cell
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2587,8 +2623,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bfbcd382b1ce7b846ae2da83a4cb04e8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  moves: 0
   cell: {fileID: 1369183028}
-  winPoint: {fileID: 0}
+  isRight: 0
   clicksToWin: 3
 --- !u!114 &1369183031
 MonoBehaviour:
@@ -2696,6 +2733,7 @@ GameObject:
   - component: {fileID: 1482175057}
   - component: {fileID: 1482175056}
   - component: {fileID: 1482175055}
+  - component: {fileID: 1482175054}
   m_Layer: 5
   m_Name: Cell8
   m_TagString: Untagged
@@ -2722,6 +2760,22 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: -80}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1482175054
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1482175052}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bfbcd382b1ce7b846ae2da83a4cb04e8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  moves: 0
+  cell: {fileID: 1482175052}
+  isRight: 1
+  clicksToWin: 0
 --- !u!114 &1482175055
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2766,9 +2820,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 11500000, guid: bfbcd382b1ce7b846ae2da83a4cb04e8, type: 3}
         m_TargetAssemblyTypeName: RotateCell, Assembly-CSharp
-        m_MethodName: RotateCellOnClick
+        m_MethodName: 
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -3158,7 +3212,7 @@ GameObject:
   - component: {fileID: 1953836787}
   m_Layer: 5
   m_Name: Cell1
-  m_TagString: Untagged
+  m_TagString: cell
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3288,6 +3342,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bfbcd382b1ce7b846ae2da83a4cb04e8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  moves: 0
   cell: {fileID: 1953836782}
-  winPoint: {fileID: 964077524}
+  isRight: 0
   clicksToWin: 1
