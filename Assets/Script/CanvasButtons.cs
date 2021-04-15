@@ -32,6 +32,11 @@ public class CanvasButtons : MonoBehaviour
         SceneManager.LoadScene(gameObject.name);
     }
 
+    public void LoadNextLevel() {
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+    }
+
+
     public void Resume() {
         pauseMenuUI.SetActive(false);
         Time.timeScale = 1f;
