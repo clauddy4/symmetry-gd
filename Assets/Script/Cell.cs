@@ -19,6 +19,7 @@ public class Cell : Field
     }
 
     public void RotateCellOnClick() {
+        PlaySound();
         cell.transform.Rotate(0, 0, -90);
 
         clicks++;
@@ -41,5 +42,10 @@ public class Cell : Field
             }
             return false;
         }
+    }
+
+    private void PlaySound() {
+        if (PlayerPrefs.GetString("music") != "No")
+            GetComponent<AudioSource>().Play();
     }
 }

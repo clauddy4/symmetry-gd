@@ -176,11 +176,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   victoryUI: {fileID: 457880850}
-  movesLeft: {fileID: 493488704}
-  stars: {fileID: 262548272}
-  stars3: {fileID: 21300000, guid: 09fec9f073b90a14295cc756c8b301f1, type: 3}
-  stars2: {fileID: 21300000, guid: 139ac16c413b5844fb7100e0b9995e3b, type: 3}
-  stars1: {fileID: 21300000, guid: 06a8cf61658148e45ad8bdd550eabedd, type: 3}
   cell: {fileID: 125787346}
   isRight: 0
   clicksToWin: 0
@@ -439,11 +434,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   victoryUI: {fileID: 457880850}
-  movesLeft: {fileID: 493488704}
-  stars: {fileID: 262548272}
-  stars3: {fileID: 21300000, guid: 09fec9f073b90a14295cc756c8b301f1, type: 3}
-  stars2: {fileID: 21300000, guid: 139ac16c413b5844fb7100e0b9995e3b, type: 3}
-  stars1: {fileID: 21300000, guid: 06a8cf61658148e45ad8bdd550eabedd, type: 3}
   cell: {fileID: 185465973}
   isRight: 0
   clicksToWin: 0
@@ -702,11 +692,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   victoryUI: {fileID: 457880850}
-  movesLeft: {fileID: 493488704}
-  stars: {fileID: 262548272}
-  stars3: {fileID: 21300000, guid: 09fec9f073b90a14295cc756c8b301f1, type: 3}
-  stars2: {fileID: 21300000, guid: 139ac16c413b5844fb7100e0b9995e3b, type: 3}
-  stars1: {fileID: 21300000, guid: 06a8cf61658148e45ad8bdd550eabedd, type: 3}
   cell: {fileID: 240322646}
   isRight: 0
   clicksToWin: 2
@@ -912,100 +897,6 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
---- !u!1 &262548270
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 262548271}
-  - component: {fileID: 262548273}
-  - component: {fileID: 262548272}
-  - component: {fileID: 262548274}
-  m_Layer: 5
-  m_Name: Stars
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!224 &262548271
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 262548270}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 457880851}
-  m_RootOrder: 5
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.28300002, y: 0.5}
-  m_AnchorMax: {x: 0.7238716, y: 0.5714208}
-  m_AnchoredPosition: {x: -1.5000305, y: 1.8963013}
-  m_SizeDelta: {x: -2.9673004, y: 6}
-  m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &262548272
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 262548270}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
-  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
-  m_Maskable: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 09fec9f073b90a14295cc756c8b301f1, type: 3}
-  m_Type: 0
-  m_PreserveAspect: 0
-  m_FillCenter: 1
-  m_FillMethod: 4
-  m_FillAmount: 1
-  m_FillClockwise: 1
-  m_FillOrigin: 0
-  m_UseSpriteMesh: 0
-  m_PixelsPerUnitMultiplier: 1
---- !u!222 &262548273
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 262548270}
-  m_CullTransparentMesh: 1
---- !u!114 &262548274
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 262548270}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c39b3b98e8912c34a9642d4f8e62635f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  victoryUI: {fileID: 457880850}
-  movesLeft: {fileID: 493488704}
-  stars: {fileID: 262548272}
-  stars3: {fileID: 21300000, guid: 09fec9f073b90a14295cc756c8b301f1, type: 3}
-  stars2: {fileID: 21300000, guid: 139ac16c413b5844fb7100e0b9995e3b, type: 3}
-  stars1: {fileID: 21300000, guid: 06a8cf61658148e45ad8bdd550eabedd, type: 3}
 --- !u!1 &355215757
 GameObject:
   m_ObjectHideFlags: 0
@@ -1445,7 +1336,6 @@ RectTransform:
   - {fileID: 400771367}
   - {fileID: 1531231082}
   - {fileID: 403236669}
-  - {fileID: 262548271}
   m_Father: {fileID: 1285105435}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -1601,11 +1491,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   victoryUI: {fileID: 457880850}
-  movesLeft: {fileID: 493488704}
-  stars: {fileID: 262548272}
-  stars3: {fileID: 21300000, guid: 09fec9f073b90a14295cc756c8b301f1, type: 3}
-  stars2: {fileID: 21300000, guid: 139ac16c413b5844fb7100e0b9995e3b, type: 3}
-  stars1: {fileID: 21300000, guid: 06a8cf61658148e45ad8bdd550eabedd, type: 3}
 --- !u!1 &465007362
 GameObject:
   m_ObjectHideFlags: 0
@@ -1659,11 +1544,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   victoryUI: {fileID: 457880850}
-  movesLeft: {fileID: 493488704}
-  stars: {fileID: 262548272}
-  stars3: {fileID: 21300000, guid: 09fec9f073b90a14295cc756c8b301f1, type: 3}
-  stars2: {fileID: 21300000, guid: 139ac16c413b5844fb7100e0b9995e3b, type: 3}
-  stars1: {fileID: 21300000, guid: 06a8cf61658148e45ad8bdd550eabedd, type: 3}
   cell: {fileID: 465007362}
   isRight: 0
   clicksToWin: 1
@@ -3065,11 +2945,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   victoryUI: {fileID: 457880850}
-  movesLeft: {fileID: 493488704}
-  stars: {fileID: 262548272}
-  stars3: {fileID: 21300000, guid: 09fec9f073b90a14295cc756c8b301f1, type: 3}
-  stars2: {fileID: 21300000, guid: 139ac16c413b5844fb7100e0b9995e3b, type: 3}
-  stars1: {fileID: 21300000, guid: 06a8cf61658148e45ad8bdd550eabedd, type: 3}
 --- !u!114 &964077527
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3343,6 +3218,7 @@ GameObject:
   - component: {fileID: 1018648648}
   - component: {fileID: 1018648647}
   - component: {fileID: 1018648646}
+  - component: {fileID: 1018648650}
   - component: {fileID: 1018648651}
   m_Layer: 5
   m_Name: Music
@@ -3479,6 +3355,21 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1018648644}
   m_CullTransparentMesh: 1
+--- !u!114 &1018648650
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1018648644}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 691db107ed812504281a7fd2b0bfe7bb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pauseMenuUI: {fileID: 0}
+  musicOn: {fileID: 0}
+  musicOff: {fileID: 0}
 --- !u!82 &1018648651
 AudioSource:
   m_ObjectHideFlags: 0
@@ -3486,7 +3377,7 @@ AudioSource:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1018648644}
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 990ff696f5e85bf4fa3b6ed45968b1a3, type: 3}
@@ -3627,11 +3518,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   victoryUI: {fileID: 457880850}
-  movesLeft: {fileID: 493488704}
-  stars: {fileID: 262548272}
-  stars3: {fileID: 21300000, guid: 09fec9f073b90a14295cc756c8b301f1, type: 3}
-  stars2: {fileID: 21300000, guid: 139ac16c413b5844fb7100e0b9995e3b, type: 3}
-  stars1: {fileID: 21300000, guid: 06a8cf61658148e45ad8bdd550eabedd, type: 3}
   cell: {fileID: 1167958252}
   isRight: 1
   clicksToWin: 0
@@ -4122,11 +4008,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   victoryUI: {fileID: 457880850}
-  movesLeft: {fileID: 493488704}
-  stars: {fileID: 262548272}
-  stars3: {fileID: 21300000, guid: 09fec9f073b90a14295cc756c8b301f1, type: 3}
-  stars2: {fileID: 21300000, guid: 139ac16c413b5844fb7100e0b9995e3b, type: 3}
-  stars1: {fileID: 21300000, guid: 06a8cf61658148e45ad8bdd550eabedd, type: 3}
   cell: {fileID: 1362523819}
   isRight: 0
   clicksToWin: 2
@@ -4385,11 +4266,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   victoryUI: {fileID: 457880850}
-  movesLeft: {fileID: 493488704}
-  stars: {fileID: 262548272}
-  stars3: {fileID: 21300000, guid: 09fec9f073b90a14295cc756c8b301f1, type: 3}
-  stars2: {fileID: 21300000, guid: 139ac16c413b5844fb7100e0b9995e3b, type: 3}
-  stars1: {fileID: 21300000, guid: 06a8cf61658148e45ad8bdd550eabedd, type: 3}
   cell: {fileID: 1369183028}
   isRight: 0
   clicksToWin: 3
@@ -4647,11 +4523,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   victoryUI: {fileID: 457880850}
-  movesLeft: {fileID: 493488704}
-  stars: {fileID: 262548272}
-  stars3: {fileID: 21300000, guid: 09fec9f073b90a14295cc756c8b301f1, type: 3}
-  stars2: {fileID: 21300000, guid: 139ac16c413b5844fb7100e0b9995e3b, type: 3}
-  stars1: {fileID: 21300000, guid: 06a8cf61658148e45ad8bdd550eabedd, type: 3}
   cell: {fileID: 1482175052}
   isRight: 1
   clicksToWin: 0
@@ -5882,11 +5753,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   victoryUI: {fileID: 457880850}
-  movesLeft: {fileID: 493488704}
-  stars: {fileID: 262548272}
-  stars3: {fileID: 21300000, guid: 09fec9f073b90a14295cc756c8b301f1, type: 3}
-  stars2: {fileID: 21300000, guid: 139ac16c413b5844fb7100e0b9995e3b, type: 3}
-  stars1: {fileID: 21300000, guid: 06a8cf61658148e45ad8bdd550eabedd, type: 3}
   cell: {fileID: 1953836782}
   isRight: 0
   clicksToWin: 1
@@ -6042,11 +5908,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   victoryUI: {fileID: 2012066004}
-  movesLeft: {fileID: 0}
-  stars: {fileID: 0}
-  stars3: {fileID: 0}
-  stars2: {fileID: 0}
-  stars1: {fileID: 0}
 --- !u!82 &2012066007
 AudioSource:
   m_ObjectHideFlags: 0

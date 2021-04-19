@@ -15,27 +15,39 @@ public class CanvasButtons : MonoBehaviour
     }
 
     public void Play() {
+        PlaySoundOnClick();
+        
         SceneManager.LoadScene("LevelChoice");
     }
 
     public void Replay() {
+        PlaySoundOnClick();
+
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
     }
 
     public void Close() {
+        PlaySoundOnClick();
+
         SceneManager.LoadScene("Main");
     }
 
     public void LoadScene() {
+        PlaySoundOnClick();
+
         SceneManager.LoadScene(gameObject.name);
     }
 
     public void LoadNextLevel() {
+        PlaySoundOnClick();
+
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
     }
 
 
     public void Resume() {
+        PlaySoundOnClick();
+
         pauseMenuUI.SetActive(false);
         Time.timeScale = 1f;
         isGamePaused = false;
