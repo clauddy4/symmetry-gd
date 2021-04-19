@@ -175,7 +175,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   victoryUI: {fileID: 457880850}
-  cellsUI: {fileID: 964077524}
   moves: 0
   cell: {fileID: 125787346}
   isRight: 0
@@ -326,7 +325,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   victoryUI: {fileID: 457880850}
-  cellsUI: {fileID: 964077524}
   moves: 0
   cell: {fileID: 185465973}
   isRight: 0
@@ -477,7 +475,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   victoryUI: {fileID: 457880850}
-  cellsUI: {fileID: 964077524}
   moves: 0
   cell: {fileID: 240322646}
   isRight: 0
@@ -611,7 +608,7 @@ RectTransform:
   - {fileID: 1174120658}
   - {fileID: 1715727166}
   m_Father: {fileID: 1285105435}
-  m_RootOrder: 3
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.030347826, y: 0.41489297}
   m_AnchorMax: {x: 0.97834784, y: 0.8232233}
@@ -980,7 +977,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   pauseMenuUI: {fileID: 0}
-  cells: {fileID: 0}
   musicOn: {fileID: 0}
   musicOff: {fileID: 0}
 --- !u!114 &403236672
@@ -1114,7 +1110,7 @@ RectTransform:
   - {fileID: 1531231082}
   - {fileID: 403236669}
   m_Father: {fileID: 1285105435}
-  m_RootOrder: 4
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
@@ -1268,7 +1264,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   victoryUI: {fileID: 457880850}
-  cellsUI: {fileID: 964077524}
   moves: 0
 --- !u!1 &465007362
 GameObject:
@@ -1322,7 +1317,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   victoryUI: {fileID: 457880850}
-  cellsUI: {fileID: 964077524}
   moves: 0
   cell: {fileID: 465007362}
   isRight: 0
@@ -1420,6 +1414,85 @@ CanvasRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 465007362}
+  m_CullTransparentMesh: 1
+--- !u!1 &493488702
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 493488703}
+  - component: {fileID: 493488705}
+  - component: {fileID: 493488704}
+  m_Layer: 5
+  m_Name: Moves
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &493488703
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 493488702}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1285105435}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.39765218, y: 0.73600006}
+  m_AnchorMax: {x: 0.7607827, y: 0.78655356}
+  m_AnchoredPosition: {x: 0.049728394, y: 0.5359497}
+  m_SizeDelta: {x: 6.100296, y: -0.8009033}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &493488704
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 493488702}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_FontData:
+    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_FontSize: 14
+    m_FontStyle: 0
+    m_BestFit: 0
+    m_MinSize: 10
+    m_MaxSize: 40
+    m_Alignment: 0
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1
+  m_Text: 'MOVES LEFT: <size=26>0</size>'
+--- !u!222 &493488705
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 493488702}
   m_CullTransparentMesh: 1
 --- !u!1 &519420028
 GameObject:
@@ -1798,7 +1871,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   pauseMenuUI: {fileID: 0}
-  cells: {fileID: 0}
   musicOn: {fileID: 0}
   musicOff: {fileID: 0}
 --- !u!114 &852721801
@@ -2042,7 +2114,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   pauseMenuUI: {fileID: 355215757}
-  cells: {fileID: 964077524}
   musicOn: {fileID: 0}
   musicOff: {fileID: 0}
 --- !u!82 &869615516
@@ -2258,7 +2329,7 @@ RectTransform:
   - {fileID: 1482175053}
   - {fileID: 465007363}
   m_Father: {fileID: 1285105435}
-  m_RootOrder: 5
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -2278,7 +2349,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   victoryUI: {fileID: 457880850}
-  cellsUI: {fileID: 964077524}
   moves: 16
 --- !u!1 &968137194
 GameObject:
@@ -2333,7 +2403,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   pauseMenuUI: {fileID: 355215757}
-  cells: {fileID: 964077524}
   musicOn: {fileID: 0}
   musicOff: {fileID: 0}
 --- !u!114 &968137197
@@ -2580,7 +2649,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   pauseMenuUI: {fileID: 355215757}
-  cells: {fileID: 0}
   musicOn: {fileID: 21300000, guid: 850871f9aef787c478faa7e74b8a935a, type: 3}
   musicOff: {fileID: 21300000, guid: 7da67a2a2a9ee274cad2507be6993626, type: 3}
 --- !u!114 &1018648647
@@ -2690,7 +2758,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   pauseMenuUI: {fileID: 0}
-  cells: {fileID: 0}
   musicOn: {fileID: 0}
   musicOff: {fileID: 0}
 --- !u!82 &1018648651
@@ -2841,7 +2908,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   victoryUI: {fileID: 457880850}
-  cellsUI: {fileID: 964077524}
   moves: 0
   cell: {fileID: 1167958252}
   isRight: 1
@@ -3075,7 +3141,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   pauseMenuUI: {fileID: 0}
-  cells: {fileID: 0}
   musicOn: {fileID: 0}
   musicOff: {fileID: 0}
 --- !u!82 &1174120663
@@ -3268,9 +3333,10 @@ RectTransform:
   - {fileID: 1763948372}
   - {fileID: 968137195}
   - {fileID: 1018648645}
-  - {fileID: 355215758}
-  - {fileID: 457880851}
+  - {fileID: 493488703}
   - {fileID: 964077525}
+  - {fileID: 457880851}
+  - {fileID: 355215758}
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -3331,7 +3397,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   victoryUI: {fileID: 457880850}
-  cellsUI: {fileID: 964077524}
   moves: 0
   cell: {fileID: 1362523819}
   isRight: 0
@@ -3482,7 +3547,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   victoryUI: {fileID: 457880850}
-  cellsUI: {fileID: 964077524}
   moves: 0
   cell: {fileID: 1369183028}
   isRight: 0
@@ -3633,7 +3697,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   victoryUI: {fileID: 457880850}
-  cellsUI: {fileID: 964077524}
   moves: 0
   cell: {fileID: 1482175052}
   isRight: 1
@@ -3881,7 +3944,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   pauseMenuUI: {fileID: 0}
-  cells: {fileID: 0}
   musicOn: {fileID: 0}
   musicOff: {fileID: 0}
 --- !u!114 &1531231085
@@ -4125,7 +4187,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   pauseMenuUI: {fileID: 0}
-  cells: {fileID: 0}
   musicOn: {fileID: 0}
   musicOff: {fileID: 0}
 --- !u!82 &1715727171
@@ -4451,7 +4512,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   victoryUI: {fileID: 457880850}
-  cellsUI: {fileID: 964077524}
   moves: 0
   cell: {fileID: 1953836782}
   isRight: 0
