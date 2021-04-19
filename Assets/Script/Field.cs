@@ -7,7 +7,6 @@ public class Field : MonoBehaviour
     public GameObject victoryUI;
 
     private int point;
-    public int moves;
 
     void Update() {
         GameObject[] cells;
@@ -17,6 +16,7 @@ public class Field : MonoBehaviour
 
         foreach (GameObject cell in cells) {
             Cell c = cell.GetComponent<Cell>();
+
             if (c.isRight) {
                 point++;
             }
@@ -25,6 +25,4 @@ public class Field : MonoBehaviour
             victoryUI.SetActive(true);
         } 
     }
-
-
 }

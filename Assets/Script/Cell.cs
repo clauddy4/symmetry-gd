@@ -28,7 +28,6 @@ public class Cell : Field
         } else {
             isRight = false;
         }
-        Debug.Log(isRight);
     }
 
     private bool GetRightClicksCount() {
