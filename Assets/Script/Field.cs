@@ -5,7 +5,6 @@ using UnityEngine;
 public class Field : MonoBehaviour
 {
     public GameObject victoryUI;
-    public GameObject cellsUI;
 
     private int point;
     public int moves;
@@ -24,7 +23,6 @@ public class Field : MonoBehaviour
         }
         if (point == cells.Length) {
             victoryUI.SetActive(true);
-            cellsUI.SetActive(false);
         } 
     }
 

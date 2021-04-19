@@ -7,8 +7,6 @@ public class CanvasButtons : MonoBehaviour
     public static bool isGamePaused = false;
     public GameObject pauseMenuUI;
 
-    public GameObject cells;
-
     public Sprite musicOn, musicOff;
 
     private void Start() {
@@ -40,7 +38,6 @@ public class CanvasButtons : MonoBehaviour
     public void Resume() {
         pauseMenuUI.SetActive(false);
         Time.timeScale = 1f;
-        cells.SetActive(true);
         isGamePaused = false;
     }
 
@@ -49,7 +46,6 @@ public class CanvasButtons : MonoBehaviour
 
         pauseMenuUI.SetActive(true);
         Time.timeScale = 0f;
-        cells.SetActive(false);
         isGamePaused = true;
     }
 
