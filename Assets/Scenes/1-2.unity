@@ -5101,6 +5101,100 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1630754738}
   m_CullTransparentMesh: 1
+--- !u!1 &1668813745
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1668813746}
+  - component: {fileID: 1668813749}
+  - component: {fileID: 1668813748}
+  - component: {fileID: 1668813747}
+  m_Layer: 5
+  m_Name: Stars
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1668813746
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1668813745}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 2012066005}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.28300002, y: 0.5}
+  m_AnchorMax: {x: 0.7238716, y: 0.5714208}
+  m_AnchoredPosition: {x: -1.5000305, y: 1.8963013}
+  m_SizeDelta: {x: -2.9673004, y: 6}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1668813747
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1668813745}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c39b3b98e8912c34a9642d4f8e62635f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  victoryUI: {fileID: 457880850}
+  movesLeft: {fileID: 493488704}
+  stars: {fileID: 1668813748}
+  stars3: {fileID: 21300000, guid: 09fec9f073b90a14295cc756c8b301f1, type: 3}
+  stars2: {fileID: 21300000, guid: 139ac16c413b5844fb7100e0b9995e3b, type: 3}
+  stars1: {fileID: 21300000, guid: 06a8cf61658148e45ad8bdd550eabedd, type: 3}
+--- !u!114 &1668813748
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1668813745}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 21300000, guid: d198272186228b4458d40d7baacfd979, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &1668813749
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1668813745}
+  m_CullTransparentMesh: 1
 --- !u!1 &1685540151
 GameObject:
   m_ObjectHideFlags: 0
@@ -6228,7 +6322,6 @@ GameObject:
   - component: {fileID: 2012066009}
   - component: {fileID: 2012066008}
   - component: {fileID: 2012066007}
-  - component: {fileID: 2012066006}
   m_Layer: 5
   m_Name: Lose
   m_TagString: Untagged
@@ -6251,6 +6344,7 @@ RectTransform:
   - {fileID: 1494098187}
   - {fileID: 1630754739}
   - {fileID: 829081753}
+  - {fileID: 1668813746}
   m_Father: {fileID: 1285105435}
   m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -6259,24 +6353,6 @@ RectTransform:
   m_AnchoredPosition: {x: 0.039978027, y: -0.17001343}
   m_SizeDelta: {x: -0.07999992, y: 8.690002}
   m_Pivot: {x: 0, y: 0}
---- !u!114 &2012066006
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2012066004}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c39b3b98e8912c34a9642d4f8e62635f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  victoryUI: {fileID: 2012066004}
-  movesLeft: {fileID: 0}
-  stars: {fileID: 0}
-  stars3: {fileID: 0}
-  stars2: {fileID: 0}
-  stars1: {fileID: 0}
 --- !u!82 &2012066007
 AudioSource:
   m_ObjectHideFlags: 0
