@@ -10,12 +10,12 @@ public class LoseController : MonoBehaviour {
     public int moves;
 
     void Start() {
-        movesLeftText.text = "MOVES LEFT: <size=26>" + moves + "</size>";
+        movesLeftText.text = "MOVES LEFT: <size=76>" + moves + "</size>";
     }
 
     public void loseController() {
         moves--;
-        movesLeftText.text = "MOVES LEFT: <size=26>" + moves + "</size>";
+        movesLeftText.text = "MOVES LEFT: <size=76>" + moves + "</size>";
 
         if (moves == 0) {
             loseUI.SetActive(true);
