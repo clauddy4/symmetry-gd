@@ -40,7 +40,7 @@ public class Field : MonoBehaviour
 
             if (movesInt >= 6) {
                 stars.sprite = stars3;
-            } else if (movesInt >= 3) {
+            } else if (movesInt >= 4) {
                 stars.sprite = stars2;
             } else {
                 stars.sprite = stars1;
