@@ -2,11 +2,13 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using System.Threading;
+using System.Threading.Tasks;
 using System;
 
 public class Field : MonoBehaviour
 {
-    public GameObject victoryUI;
+    public GameObject victoryUI, fireworks;
     public Text movesLeft;
 
     public Image stars;
@@ -14,12 +16,16 @@ public class Field : MonoBehaviour
 
     private string movesTxt;
     private int movesInt;
-
+    private bool coroutineIsRunning = false;
     private int point;
+
+    IEnumerator<WaitForSeconds> makeWin(float time) {
+        yield return new WaitForSeconds(time);
+        victoryUI.SetActive(true);
+    }
 
     void Update() {
         GameObject[] cells;
-        
         
         cells = GameObject.FindGameObjectsWithTag("cell");
         point = 0;
@@ -32,7 +38,12 @@ public class Field : MonoBehaviour
             }
         }
         if (point == cells.Length) {
-            victoryUI.SetActive(true);
+            Instantiate(fireworks, new Vector2(0, 0), Quaternion.identity);
+
+            if (!coroutineIsRunning) {
+                coroutineIsRunning = true;
+                StartCoroutine(makeWin(1f));
+            }
 
             movesTxt = movesLeft.text.Remove(0, 21);
             movesTxt = movesTxt.Trim( new Char[] { '<', '/', 's', 'i', 'z', 'e', '>' } );
