@@ -712,7 +712,7 @@ MonoBehaviour:
   stars1: {fileID: 21300000, guid: 06a8cf61658148e45ad8bdd550eabedd, type: 3}
   cell: {fileID: 185465973}
   isRight: 0
-  clicksToWin: 1
+  clicksToWin: 3
 --- !u!114 &185465976
 MonoBehaviour:
   m_ObjectHideFlags: 0
